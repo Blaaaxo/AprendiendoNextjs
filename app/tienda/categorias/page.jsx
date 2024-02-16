@@ -2,7 +2,9 @@ import React from 'react'
 
 function CategoriasPage() {
   return (
-    <div>CategoriasPage</div>
+    <div>
+      <h1>paginas CategoriasPage</h1>
+    </div>
   )
 }
 

@@ -2,7 +2,10 @@ import React from 'react'
 
 function TiendaPage() {
   return (
-    <div>TiendaPage</div>
+    <div>
+      <h1>Tienda home</h1>
+      <p>asd</p>
+    </div>
   )
 }
 
