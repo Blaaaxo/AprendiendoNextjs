@@ -7,13 +7,13 @@ async function loadPosts() {
     const data = await res.json();
 
     // en caso de que los datos demoren
-    // await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 3000))
 
     return data;
 }
 
 // RSC (react server component)
-async function PostPage() {
+async function PostsPage() {
 
     const posts = await loadPosts();
     console.log(posts);
@@ -27,5 +27,5 @@ async function PostPage() {
     );
 }
 
-export default PostPage;
+export default PostsPage;
 
