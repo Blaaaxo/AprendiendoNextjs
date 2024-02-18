@@ -1,13 +1,18 @@
 import React from 'react'
 import PostCard from '../../components/PostCard'
+import { resolve } from 'styled-jsx/css';
 
 async function loadPosts() {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();
+
+    // en caso de que los datos demoren
+    // await new Promise((resolve) => setTimeout(resolve, 2000))
+
     return data;
 }
 
-//renderiza los posts
+// RSC (react server component)
 async function PostPage() {
 
     const posts = await loadPosts();

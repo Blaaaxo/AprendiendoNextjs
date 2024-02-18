@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 
+// RCC (react client component)
 function PostCard({ post }) {
     return (
         <div>
