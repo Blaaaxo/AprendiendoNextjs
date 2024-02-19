@@ -19,11 +19,14 @@ async function PostsPage() {
     console.log(posts);
 
     return (
-        <div>
-            {posts.map((post) => (
-                <PostCard post={post} key={post.id}/>
-            ))}
-        </div>
+        <section className='mt-12 max-w-7xl mx-auto rounded-xl bg-white'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-3 py-4'>
+                {posts.map((post) => (
+                    <PostCard post={post} key={post.id}/>
+                ))}
+            </div>
+            
+        </section>
     );
 }
 

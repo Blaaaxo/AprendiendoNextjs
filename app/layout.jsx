@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import { Poppins } from "next/font/google"
+import './globals.css'
 
 
 export const metadata = {
@@ -17,7 +18,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className + " bg-gradient-to-r from-purple-500 to-pink-500 min-h-screen" }>
 
         <Navbar />
 

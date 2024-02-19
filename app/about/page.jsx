@@ -1,8 +1,8 @@
 function AboutPage(){
     return (
-        <h1>
+        <div className='mt-12 max-w-7xl mx-auto'>
             About page
-        </h1>
+        </div>
     )
 }
 
